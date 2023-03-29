@@ -1,0 +1,159 @@
+table.dataTable thead .sorting_desc
+  background-image: url(/img/sort_desc.png)
+
+table.dataTable thead .sorting_asc
+  background-image: url(/img/sort_asc.png)
+
+table.dataTable thead .sorting
+  background-image: url(/img/sort_both.png)
+
+table.dataTable thead .sorting, table.dataTable thead .sorting_asc, table.dataTable thead .sorting_desc, table.dataTable thead .sorting_asc_disabled, table.dataTable thead .sorting_desc_disabled
+  cursor: pointer
+  *cursor: hand
+  background-repeat: no-repeat
+  background-position: center right
+
+.table thead th,.table-patients thead th
+  border: 0
+  color: $pr
+  font-weight: 700
+  font-size: 11pt
+.table-patients
+    width: 100%
+
+.table td,.table-patients td
+  color: $sc
+  vertical-align: middle
+
+.table-striped tbody tr:nth-of-type(odd)
+  background: #F1F1F1
+
+.icon-icon-11, .icon-icon-12, .icon-eye
+  font-size: 14pt
+
+.icon-eye
+  color: #bfbfbf
+
+.icon-icon-12
+  margin-left: .8rem
+
+.search-soft
+  float: right
+  position: relative
+  margin-bottom: 1rem
+  input
+    background: $f0
+    height: 40px
+    border-radius: 3px
+    font-size: 11pt
+    width: 50%
+    max-width: 358px
+    min-width: 270px
+    position: relative
+    display: inline-block
+    border: 0
+    &:focus
+      background: #f0f0f0
+      outline: 0
+      box-shadow: 0 0 0
+    &::placeholder
+      color: $bf
+  &:before
+    content: ''
+    width: 50px
+    height: 40px
+    position: absolute
+    background: $pr
+    right: 0
+    top: 0
+    border-radius: 0 3px 3px 0
+    z-index: 2
+  &:after
+    content: url('/img/search-02.png')
+    position: absolute
+    background: $pr
+    right: 15px
+    top: 7px
+    z-index: 3
+
+
+.row-soft
+  float: left
+  color: $sc
+  margin-top: .7rem
+  font-weight: 400
+  select
+    display: inline-block
+    width: 70px
+    height: 40px
+    font-size: 12pt
+    color: $bf
+
+.text-row-soft
+  float: left
+  color: $sc
+  font-weight: 400
+
+.pag-soft
+  float: right
+
+.clear
+  clear: both
+
+.page-link
+  padding: 0.2rem 0.46rem
+
+.page-item.active .page-link
+  background: $pr
+  border: 0
+  border-radius: 50%
+
+.page-item.disabled .page-link
+  border: 0 !important
+  padding: 0.2rem 0.75rem
+
+.title-crud, .button-new
+  float: left
+
+.title-crud
+  padding-right: .8rem
+  height: 40px
+  border-right: 1px solid rgba($bf, .8)
+  h2
+    color: $sc
+    font-size: 16pt
+    line-height: 40px
+    font-weight: 700
+  h4
+    color: $sc
+    font-size: 13pt
+    line-height: 40px
+    font-weight: 400
+    cursor: pointer
+    .icon-new-02 .path1:before
+      content: "\e910"
+      color: rgba($pr, 1) !important
+    .icon-new-02 .path2:before
+      content: "\e911"
+      margin-left: -1em
+      color: $wh !important
+    .icon-new-02 .path3:before
+      content: "\e912"
+      margin-left: -1em
+      color: $wh !important
+
+.button-new
+  margin-left: .8rem
+
+.icon-act-03
+  font-size: 8pt
+  margin-left: .5rem
+
+.icon-close
+  font-size: 8pt
+  &:before
+    color: red
+
+.page-link
+  color: $sc
+  border: 0

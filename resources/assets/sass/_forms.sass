@@ -1,0 +1,621 @@
+.line-form
+  background: $e1
+  height: 1px
+  width: 100%
+  margin: 1rem 0 1.5rem
+
+.title-form
+  color: $pr
+  font-size: 16pt
+  font-weight: 700
+  letter-spacing: .5px
+  text-align: center
+  width: 100%
+
+p
+  margin-bottom: 0
+
+.separator
+  width: calc(100% + 4rem)
+  height: 20px
+  background: $f1
+  margin: 1rem 0 1rem -2rem
+
+.form-group
+  color: $sc
+  line-height: 37.04px
+  input, select, textarea
+    //background: $f0
+    //border: 0
+    &:focus
+      background: $f0
+      outline: 0
+      box-shadow: 0 0 0
+    &::placeholder
+      color: $bf
+  select
+    //color: $bf
+  strong
+    span
+      color: rgba(255, 0, 0, 0.63)
+
+.c-primary
+  color: $pr
+
+.fw5
+  font-weight: 500
+
+.file-soft, .cam-soft
+  display: flex
+  align-items: center
+  cursor: pointer
+  div
+    font-size: 12pt
+    color: $sc
+    &:last-child
+      background: $pr
+      float: left
+      margin-left: .7rem
+      text-align: center
+      height: 34px
+      width: 34px
+      display: flex
+      align-items: center
+      border-radius: 50%
+      span
+        text-align: center
+        margin: 0 auto
+
+
+.btn-toggle
+  margin: 0 4rem
+  padding: 0
+  position: relative
+  border: none
+  height: 1.5rem
+  width: 3rem
+  border-radius: 1.5rem
+  color: #6b7381
+  background: #bdc1c8
+
+.btn-toggle:focus,
+.btn-toggle.focus,
+.btn-toggle:focus.active,
+.btn-toggle.focus.active
+  outline: none
+
+.btn-toggle:before,
+.btn-toggle:after
+  line-height: 1.5rem
+  width: 4rem
+  text-align: center
+  font-weight: 600
+  font-size: 0.75rem
+  text-transform: uppercase
+  letter-spacing: 2px
+  position: absolute
+  bottom: 0
+  transition: opacity 0.25s
+
+.btn-toggle:before
+  content: "Off"
+  left: -4rem
+
+.btn-toggle:after
+  content: "On"
+  right: -4rem
+  opacity: 0.5
+
+.btn-toggle > .handle
+  position: absolute
+  top: 0.1875rem
+  left: 0.1875rem
+  width: 1.125rem
+  height: 1.125rem
+  border-radius: 1.125rem
+  background: #fff
+  transition: left 0.25s
+
+.btn-toggle.active
+  transition: background-color 0.25s
+
+.btn-toggle.active > .handle
+  left: 1.6875rem
+  transition: left 0.25s
+
+.btn-toggle.active:before
+  opacity: 0.5
+
+.btn-toggle.active:after
+  opacity: 1
+
+.btn-toggle.btn-sm:before,
+.btn-toggle.btn-sm:after
+  line-height: -0.5rem
+  color: #fff
+  letter-spacing: 0.75px
+  left: 0.4125rem
+  width: 2.325rem
+
+.btn-toggle.btn-sm:before
+  text-align: right
+
+.btn-toggle.btn-sm:after
+  text-align: left
+  opacity: 0
+
+.btn-toggle.btn-sm.active:before
+  opacity: 0
+
+.btn-toggle.btn-sm.active:after
+  opacity: 1
+
+.btn-toggle:before,
+.btn-toggle:after
+  color: #6b7381
+
+.btn-toggle.active
+  background-color: #23C876
+
+.btn-toggle.btn-lg.btn-sm:before,
+.btn-toggle.btn-lg.btn-sm:after
+  line-height: 0.5rem
+  color: #fff
+  letter-spacing: 0.75px
+  left: 0.6875rem
+  width: 3.875rem
+
+.btn-toggle.btn-lg.btn-sm:before
+  text-align: right
+
+.btn-toggle.btn-lg.btn-sm:after
+  text-align: left
+  opacity: 0
+
+.btn-toggle.btn-lg.btn-sm.active:before
+  opacity: 0
+
+.btn-toggle.btn-lg.btn-sm.active:after
+  opacity: 1
+
+.btn-toggle.btn-sm
+  margin: 0 0.5rem
+  padding: 0
+  position: relative
+  border: none
+  height: 1.5rem
+  width: 3rem
+  border-radius: 1.5rem
+
+.btn-toggle.btn-sm:focus,
+.btn-toggle.btn-sm.focus,
+.btn-toggle.btn-sm:focus.active,
+.btn-toggle.btn-sm.focus.active
+  outline: none
+
+.btn-toggle.btn-sm:before,
+.btn-toggle.btn-sm:after
+  line-height: 1.5rem
+  width: 0.5rem
+  text-align: center
+  font-weight: 600
+  font-size: 0.75rem
+  text-transform: uppercase
+  letter-spacing: 2px
+  position: absolute
+  bottom: 0
+  transition: opacity 0.25s
+
+.btn-toggle.btn-sm:before
+  content: "NO"
+  left: -0.5rem
+
+.btn-toggle.btn-sm:after
+  content: "SI"
+  right: -0.5rem
+  opacity: 0.5
+
+.btn-toggle.btn-sm > .handle
+  position: absolute
+  top: 0.1875rem
+  left: 0.1875rem
+  width: 1.125rem
+  height: 1.125rem
+  border-radius: 1.125rem
+  background: #fff
+  transition: left 0.25s
+
+.btn-toggle.btn-sm.active
+  transition: background-color 0.25s
+
+.btn-toggle.btn-sm.active > .handle
+  left: 1.6875rem
+  transition: left 0.25s
+
+.btn-toggle.btn-sm.active:before
+  opacity: 0.5
+
+.btn-toggle.btn-sm.active:after
+  opacity: 1
+
+.btn-toggle.btn-sm.btn-sm:before,
+.btn-toggle.btn-sm.btn-sm:after
+  line-height: -0.5rem
+  color: #fff
+  letter-spacing: 0.75px
+  left: 0.4125rem
+  width: 2.325rem
+
+.btn-toggle.btn-sm.btn-sm:before
+  text-align: right
+
+.btn-toggle.btn-sm.btn-sm:after
+  text-align: left
+  opacity: 0
+
+.btn-toggle.btn-sm.btn-sm.active:before
+  opacity: 0
+
+.btn-toggle.btn-sm.btn-sm.active:after
+  opacity: 1
+
+.btn-toggle.btn-sm.btn-xs:before,
+.btn-toggle.btn-sm.btn-xs:after
+  display: none
+
+.btn-toggle.btn-xs.btn-sm:before,
+.btn-toggle.btn-xs.btn-sm:after
+  line-height: -1rem
+  color: #fff
+  letter-spacing: 0.75px
+  left: 0.275rem
+  width: 1.55rem
+
+.btn-toggle.btn-xs.btn-sm:before
+  text-align: right
+
+.btn-toggle.btn-xs.btn-sm:after
+  text-align: left
+  opacity: 0
+
+.btn-toggle.btn-xs.btn-sm.active:before
+  opacity: 0
+
+.btn-toggle.btn-xs.btn-sm.active:after
+  opacity: 1
+
+.btn-toggle.btn-xs.btn-xs:before,
+.btn-toggle.btn-xs.btn-xs:after
+  display: none
+
+.container-soft
+  display: block
+  position: relative
+  padding-left: 35px
+  cursor: pointer
+  font-size: 12pt
+  user-select: none
+  vertical-align: middle
+
+
+/* Hide the browser's default checkbox */
+.container-soft input
+  position: absolute
+  opacity: 0
+  cursor: pointer
+  vertical-align: middle
+  visibility: hidden
+
+
+/* Create a custom checkbox */
+.checkmark
+  position: absolute
+  top: 5px
+  left: 0
+  height: 25px
+  width: 25px
+  background-color: #eee
+
+
+/* On mouse-over, add a grey background color */
+.container-soft:hover input ~ .checkmark
+  background-color: #ccc
+
+
+/* When the checkbox is checked, add a blue background */
+.container-soft input:checked ~ .checkmark
+  background-color: #2196F3
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after
+  content: ""
+  position: absolute
+  display: none
+
+
+/* Show the checkmark when checked */
+.container-soft input:checked ~ .checkmark:after
+  display: block
+
+
+/* Style the checkmark/indicator */
+.container-soft .checkmark:after
+  left: 9px
+  top: 3px
+  width: 7px
+  height: 15px
+  border: solid white
+  border-width: 0 3px 3px 0
+  transform: rotate(45deg)
+
+.cont-show
+  width: 95%
+  margin: 2rem auto
+  &__left
+    width: 25%
+  &__content
+    background: $wh
+    padding: 1rem .5rem
+    color: $af
+    font-weight: 400
+    font-size: 10pt
+    .select2-container
+      margin-top: 1rem
+  &__img
+    width: 119px
+    height: 119px
+    margin: 0 auto
+    border-radius: 50%
+    border: 2px solid $pr
+    position: relative
+    &__new
+      position: absolute
+      top: 10px
+      right: 0px
+      z-index: 2
+    &__profile
+      width: 115px
+      height: 115px
+      object-fit: cover
+      border-radius: 50%
+  &__rol
+    max-width: 310px
+    margin: .6rem auto
+    background: $pr
+    border-radius: 7px
+    padding: .1rem 0
+    text-align: center
+    color: $wh
+    font-size: 15pt
+    font-weight: 700
+  &__active
+    padding: .5rem 0
+    text-align: center
+  &__info
+    max-width: 330px
+    margin: 0 auto
+    @extend .row
+    div
+      @extend .col-md-6
+  &__relations
+    color: $pr
+    border-top: 1px solid $pr
+    text-align: center
+    font-size: 10pt
+    font-weight: 700
+    margin: 1rem auto
+    padding-top: .3rem
+    max-width: 370px
+    width: 95%
+  &__right
+    width: 73%
+
+.tabs-patiens
+  margin: 0 auto
+  display: table
+  border: 0
+  li
+    float: left
+    text-align: center
+    width: 120px
+    margin: 0 .3rem
+    background: $pr
+    border: 0
+    border-radius: 5px
+    &:hover
+      background: $sc
+    a
+      border: 0
+      width: 100%
+      color: $wh
+      padding: .4rem 0
+      font-weight: 400
+      font-size: 13pt
+
+.nav-tabs .nav-item
+  margin-bottom: 1.5rem
+
+.nav-tabs .nav-link
+  border: 0
+  border-radius: 5px
+  &:hover
+    border: 0
+
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link
+  background: $sc
+  color: $wh
+
+.tab-content-patiens
+  border-top: 1px solid $e1
+  padding: 2rem 1rem
+
+.icon-new-02
+  vertical-align: text-bottom
+  font-size: 16pt
+
+.capture
+  background: $c31
+  padding: 2rem
+  &__frame
+    margin: 0 auto
+    width: 322px
+    height: 242px
+    position: relative
+    &:before
+      content: url("/img/cam-02.png")
+      position: absolute
+      top: -2px
+      left: -2px
+      z-index: 2
+
+#results
+  position: fixed
+  top: 70px
+  right: 0
+  z-index: 4
+  img
+    width: 100px
+    border: 2px solid rgba($pr, 1)
+
+.title-schedule
+  background: $pr
+  color: $wh
+  width: 100%
+  border-radius: 5px
+  font-weight: 400
+  font-size: 15pt
+  letter-spacing: 1px
+  padding: .2rem 0
+  text-align: center
+  margin-bottom: 1rem
+
+.title-pry
+  color: $pr
+  font-weight: 700
+  font-size: 11pt
+
+.icon-search:before
+  font-size: 15pt
+  color: $pr
+  cursor: pointer
+
+#resultsPatientSearch a
+  color: inherit !important
+
+.icon-check:before
+  color: #23c876
+  font-size: 16px
+  cursor: pointer
+
+.icon-close1:before
+  cursor: pointer
+  font-size: 18px
+  color: red
+
+.icon-handshake-o:before, .icon-calendar-check-o:before
+  cursor: pointer
+  font-size: 16px
+  color: $sc
+
+.icon-calendar-check-o:before
+  color: $pr
+
+.totalPending, .totalBalance
+  position: fixed
+  bottom: 5px
+  right: 0
+  z-index: 2
+  background: url("/img/income-02.png") no-repeat
+  width: 171px
+  height: 53px
+  color: $wh
+  font-weight: 700
+  font-size: 12pt
+  letter-spacing: 1px
+  padding: .35rem 2rem
+  p
+    font-size: 9pt
+    font-weight: 400
+
+.totalPending
+    right: 12%
+
+.totalBalance
+  bottom: 5px
+  background: url("/img/income-03.png") no-repeat
+
+.account, .account2, .tarjeta, .tarjeta2, .consignacion, .consignacion2, .online, .online2
+  display: none
+
+.form-group
+  line-height: 20px
+
+.priceOne, .priceTwo
+  display: none
+
+.content-his
+  background: $wh
+  width: 95%
+  margin: 0 auto
+  padding: 1rem 2rem
+
+#historyClinic
+  background: #f0f0f0
+  height: 42px
+  width: 200px
+  color: $sc
+  font-weight: 400
+  font-size: 11pt
+
+.date-export
+  display: none
+
+.table-sale td
+  padding: 0.5rem .25rem !important
+
+.icon-date
+  padding: .4rem
+  .icon-icon-04:before
+    font-size: 18pt
+    color: $sc
+
+.form-control
+  &::placeholder
+    color: #707070 !important
+
+.monit
+  &:hover
+    text-decoration: none
+
+
+.btn-payment .icon-icon-06:before
+  color: #fff
+
+.btn-cancel
+  background: red !important
+  .icon-close1:before
+    color: #fff
+
+.table-hover tbody tr:nth-child(odd)
+  background-color: rgba($sc, .2)
+
+#resultPatients,#resultPatients_2
+  z-index: 10
+  background: white
+  position: absolute
+  top: 100%
+  left: 0
+  width: 100%
+  border-radius: 3px
+  border: 1px solid rgba($pr, .6)
+  display: none
+  div
+    width: 100%
+    padding: .1rem .3rem
+    font-size: 11pt
+    font-weight: 400
+    color: #000
+    cursor: pointer
+    &:hover
+      background: rgba($sc, .2)

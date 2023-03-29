@@ -1,0 +1,53 @@
+.search-table-input{
+    border:none;
+    th{
+        border:none;
+    }
+    input{
+        width: 100%;
+        background: #f0f0f0;
+        border:0px;
+        height:37.03px !important;
+    }
+    select{
+        width: 100%;
+        background: #f0f0f0;
+        border:0px;
+        height:37.03px !important;
+    }
+    .form-group{
+        margin-bottom: 0px !important;
+        line-height: 35.03px !important;
+        .input-group-addon{
+            border-top-right-radius: 10px !important;
+            border-bottom-right-radius: 10px !important;
+            border: 1px solid #ced4da !important;
+            padding-left: 5px !important;
+            padding-right: 5px !important;
+            color: #B7B7B7 !important;
+        }
+    }
+    .bootstrap-datetimepicker-widget{
+        span:before{
+            color: #B7B7B7 !important;
+        }
+        span.iconfont.icon-time{
+            padding: 10px !important;
+            line-height: inherit;
+            color: white;
+        }
+
+    }
+    .bootstrap-datetimepicker-widget table {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .bootstrap-datetimepicker-widget .timepicker *{
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .col{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+}

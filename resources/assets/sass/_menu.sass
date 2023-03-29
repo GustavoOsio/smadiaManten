@@ -1,0 +1,138 @@
+.slide-menu
+  position: fixed
+  z-index: 3
+  left: 0
+  height: calc(100vh - 65px)
+  top: 65px
+  background: $wh
+  padding: 1rem 0rem
+  text-align: center
+  .icon-icon-02, .icon-icon-03, .icon-icon-04, .icon-icon-05, .icon-icon-06, .icon-icon-07, .icon-icon-08, .icon-icon-09
+    font-size: 17pt
+    margin: 0 auto
+  .icon-icon-09:before
+    color: $b7
+
+#menu
+  padding: 0
+  margin: 0 auto
+  border: 0
+  width: 100px
+  text-align: center
+
+
+#menu ul, li
+  list-style: none
+  margin: 0
+  padding: 0
+
+
+#menu ul
+  position: relative
+  z-index: 597
+  float: left
+
+
+#menu ul li
+  float: left
+  min-height: 1px
+  line-height: 1em
+  vertical-align: middle
+
+
+#menu ul li.hover,
+#menu ul li:hover
+  position: relative
+  z-index: 599
+  cursor: default
+
+
+#menu ul ul
+  visibility: hidden
+  position: absolute
+  bottom: 0
+  left: 100%
+  z-index: 598
+  width: 100%
+
+
+#menu ul ul li
+  float: none
+
+
+#menu ul li:hover > ul
+  visibility: visible
+
+
+#menu ul li
+  float: none
+
+#menu:after, #menu ul:after
+  content: ''
+  display: block
+  clear: both
+
+
+#menu ul, #menu ul:first-child li
+  width: 100%
+
+#menu ul:first-child ul li
+  width: 220px
+  padding: 0 1rem
+
+//#menu li:hover
+//  background: #f6f6f6
+
+#menu a
+  display: inline-block
+  font-weight: 400
+  font-size: 9pt
+  text-decoration: none
+  color: #6d6b6b
+  line-height: 1.4
+  padding: .6rem 0
+
+#menu li
+  background: $wh
+
+#menu ul li div
+  width: 30px
+  height: 25px
+  display: flex
+  align-items: center
+  background: $wh
+  border-radius: 50%
+  text-align: center
+  margin: 0 auto .5rem
+
+#menu ul:first-child ul li a
+  font-size: 11pt
+  color: #6d6b6b
+  font-weight: 400
+
+#menu ul ul li:hover a
+  color: $pr
+
+#menu ul ul li ul li
+  background: $wh
+
+#menu .has-sub
+  position: relative
+
+#menu li.active
+  position: relative
+  div
+    width: 60px
+    height: 60px
+    background: $pr
+    span:before
+      color: $wh
+  &:before
+    content: ''
+    right: 0
+    width: 6px
+    border-radius: 4px
+    background: $pr
+    position: absolute
+    top: 13px
+    height: 79px

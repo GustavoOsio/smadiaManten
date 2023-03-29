@@ -1,0 +1,54 @@
+.auth
+  width: 100%
+  height: 100vh
+  background: url("/img/login-01.jpg") no-repeat right bottom
+  background-size: cover
+  display: flex
+  align-items: center
+
+.content
+  width: 85%
+  margin: 0 auto
+
+.login
+  max-width: 484px
+  border: 1px solid rgba($wh, .8)
+  padding: 2rem
+  img
+    margin: 0 auto
+    display: table
+    max-width: 250px
+  h3
+    color: $sc
+    font-size: 14pt
+    font-weight: 300
+    margin: 2rem 0
+    text-align: center
+
+.input-login
+  background: transparent
+  outline: 0
+  border: 0
+  border-bottom: 1px solid $wh
+  margin-bottom: 1rem
+  &::placeholder
+    color: $sc
+    letter-spacing: .3px
+    font-weight: 300
+    font-size: 10pt
+  &:focus
+    background: transparent
+    outline: 0
+    border: 0
+    border-bottom: 1px solid $sc
+    box-shadow: 0 0 0
+
+.login-me
+  span
+    color: $b7
+    font-size: 10pt
+  a
+    font-size: 10pt
+    color: $pr
+    &:hover
+      color: $pr
